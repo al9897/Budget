@@ -1,0 +1,16 @@
+budget_backend/db.sqlite3
+.vscode/
+venv/
+*.log
+*.pot
+*.pyc
+__pycache__
+*.sqlite3
+./budget_backend/settings.py.bak
+./venv
+media
+**/migrations/
+**/**/migrations/
+ budget_backend/budget_backend/migrations/
+!**/migrations
+!**/migrations/__init__.py

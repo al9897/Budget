@@ -1,0 +1,6 @@
+[submodule "budg3t-app-front-end"]
+	path = budg3t-app-front-end
+	url = https://git.fhict.nl/I404810/budg3t-app-front-end.git
+[submodule "budg3t-app-back-end"]
+	path = budg3t-app-back-end
+	url = https://git.fhict.nl/I404810/budg3t-app-back-end.git
