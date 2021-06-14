@@ -9,8 +9,7 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-
-
+import django_heroku
 
 from pathlib import Path
 import os
@@ -29,14 +28,14 @@ SECRET_KEY = 'qf6hp!f7uosk@b=4izjaybx^6^$*p&2@yk=j+o319h)ww43p--'
 DEBUG = False
 CORS_ORIGIN_ALLOW_ALL = True
 
-ALLOWED_HOSTS = ["127.0.0.1", "localhost", "10.0.2.2", "192.168.191.1","40.112.93.161", "budgetfontys.herokuapp.com"]
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", "10.0.2.2", "192.168.191.1", "40.112.93.161", "budgetfontys.herokuapp.com"]
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 SESSION_COOKIE_AGE = 60 * 120
 
-CORS_ORIGIN_ALLOW_ALL = True # If this is used then 
+CORS_ORIGIN_ALLOW_ALL = True  # If this is used then
 CORS_ALLOW_CREDENTIALS = True
 
-#CORS_ORIGIN_ALLOW_ALL = True
+# CORS_ORIGIN_ALLOW_ALL = True
 
 # Application definition
 
@@ -61,7 +60,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    #'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -142,3 +141,4 @@ REST_FRAMEWORK = {
 }
 CORS_ORIGIN_ALLOW_ALL = True
 
+django_heroku.setting(locals())
