@@ -39,7 +39,6 @@ Pillow==8.2.0
 pipwin==0.5.1
 psycopg2==2.8.6
 psycopg2-binary==2.8.6
-PyAudio @ file:///C:/Users/lean1/pipwin/PyAudio-0.2.11-cp39-cp39-win_amd64.whl
 pycodestyle==2.7.0
 pyjsparser==2.7.1
 pylint==2.6.0
