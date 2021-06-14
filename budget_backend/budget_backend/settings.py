@@ -29,7 +29,7 @@ SECRET_KEY = 'qf6hp!f7uosk@b=4izjaybx^6^$*p&2@yk=j+o319h)ww43p--'
 DEBUG = False
 CORS_ORIGIN_ALLOW_ALL = True
 
-ALLOWED_HOSTS = ["127.0.0.1", "localhost", "10.0.2.2", "192.168.191.1","40.112.93.161", "*"]
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", "10.0.2.2", "192.168.191.1","40.112.93.161", "budgetfontys.herokuapp.com"]
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 SESSION_COOKIE_AGE = 60 * 120
 
